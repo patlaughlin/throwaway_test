@@ -1,5 +1,3 @@
-// GitHubRepoList.js
-
 /**
  * Challenge:
  * Complete the React component below to fetch repositories from GitHub's API for a given username
@@ -35,10 +33,10 @@
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [repos, setRepos] = useState([]); // State to hold the repositories
-  const [loading, setLoading] = useState(false); // State to handle the loading state
-  const [error, setError] = useState(null); // State to handle errors
-  const username = 'facebook'; // You can change this to any GitHub username
+  const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const username = 'facebook';
 
   useEffect(() => {
     // TODO: Fetch repositories from GitHub API and update the state
@@ -53,12 +51,12 @@ function App() {
   }
 
   return (
-      <div>
-        <h1>Repositories of {username}</h1>
-        <ul>
-          {/* TODO: Render the list of repositories sorted by stars */}
-        </ul>
-      </div>
+    <div>
+      <h1>Repositories of {username}</h1>
+      <ul>
+        {/* TODO: Render the list of repositories sorted by stars */}
+      </ul>
+    </div>
   );
 }
 
